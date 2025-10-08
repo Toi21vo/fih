@@ -1,0 +1,5 @@
+n Perch
+s minSize = 2.0
+r range = 427
+> Lorem ipsum dolor
+> sit amet
