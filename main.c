@@ -27,22 +27,23 @@ void printRarity(Rarity r) {
 			printf("B\n");
 			break;
 		case 5:
-			printf("A\n");
+			printf("'A'\n");
 			break;
 		case 6:
-			printf("S\n");
+			printf("*S*\n");
 			break;
 		case 7:
-			printf("SS\n");
+			printf("**SS**\n");
 			break;
 		case 8:
-			printf("SSS\n");
+			printf("***SSS***\n");
 			break;
 		default:
 			printf("NO RARITY");
 			break;
 	}
 }
+
 
 
 int main() {
@@ -60,7 +61,7 @@ int main() {
 
 	printRarity(fish.rarity);
 
-	printf("FISH SIZE: %fcm\n", fish.size);
+	printf("FISH SIZE: %.2fcm\n", fish.size);
 
 	printf("FIHS VALUE: %i\n", fish.value);
 }

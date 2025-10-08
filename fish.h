@@ -25,6 +25,13 @@ typedef struct Fish {
 	int value;
 } Fish;
 
+typedef struct range {
+	void *data;
+	int size;
+} range;
+
+#define RANGE(x) range{ &x, sizeof(x) }
+
 int randInt(int range) {
 	return (rand() / (RAND_MAX / range));
 }
